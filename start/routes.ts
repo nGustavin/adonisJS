@@ -25,6 +25,6 @@ Route.get('/', async () => {
 })
 
 
-// Route.get('/users', async () => {
-//   return {}
-// })
+Route.get('/users', 'UsersController.index')
+
+Route.post('/users', 'UsersController.create')
